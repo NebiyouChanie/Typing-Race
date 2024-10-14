@@ -116,7 +116,8 @@ const correctChecker = function(){
 
 var acc =0
 const accCalculator = function(){
-    acc = (numCorrectWords / quotewords.length)*100
+    let acc = (numCorrectWords / quotewords.length) * 100;
+    acc = acc.toFixed(2);
     localStorage.setItem('acc',acc);
 }
 
